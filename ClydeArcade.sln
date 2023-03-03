@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClydeArcade", "ClydeArcade\ClydeArcade.csproj", "{EC240D42-4374-4568-9D04-A076FFD9CEBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC240D42-4374-4568-9D04-A076FFD9CEBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC240D42-4374-4568-9D04-A076FFD9CEBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC240D42-4374-4568-9D04-A076FFD9CEBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC240D42-4374-4568-9D04-A076FFD9CEBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5A7D444-77A1-4F14-A89D-D0EF82A1FF04}
+	EndGlobalSection
+EndGlobal
