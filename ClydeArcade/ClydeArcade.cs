@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace ClydeArcade
 {
-    public partial class Form1 : Form
+    public partial class ClydeArcade : Form
     {
-        public Form1()
+        public ClydeArcade()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void ClydeArcade_Load(object sender, EventArgs e)
         {
 
         }
