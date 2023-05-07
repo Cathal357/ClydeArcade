@@ -28,20 +28,128 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btn_game1 = new System.Windows.Forms.Button();
+            this.btn_game2 = new System.Windows.Forms.Button();
+            this.btn_game3 = new System.Windows.Forms.Button();
+            this.btn_leaderboard = new System.Windows.Forms.Button();
+            this.btn_exit = new System.Windows.Forms.Button();
+            this.lbl_title = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // btn_game1
+            // 
+            this.btn_game1.BackgroundImage = global::ClydeArcade.Properties.Resources.arcade_button2;
+            this.btn_game1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_game1.Font = new System.Drawing.Font("MV Boli", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_game1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_game1.Location = new System.Drawing.Point(125, 116);
+            this.btn_game1.Name = "btn_game1";
+            this.btn_game1.Size = new System.Drawing.Size(196, 91);
+            this.btn_game1.TabIndex = 1;
+            this.btn_game1.Text = "Game 1";
+            this.btn_game1.UseVisualStyleBackColor = true;
+            // 
+            // btn_game2
+            // 
+            this.btn_game2.BackgroundImage = global::ClydeArcade.Properties.Resources.arcade_button2;
+            this.btn_game2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_game2.Font = new System.Drawing.Font("MV Boli", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_game2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_game2.Location = new System.Drawing.Point(125, 230);
+            this.btn_game2.Name = "btn_game2";
+            this.btn_game2.Size = new System.Drawing.Size(196, 91);
+            this.btn_game2.TabIndex = 2;
+            this.btn_game2.Text = "Game 2";
+            this.btn_game2.UseVisualStyleBackColor = true;
+            this.btn_game2.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // btn_game3
+            // 
+            this.btn_game3.BackgroundImage = global::ClydeArcade.Properties.Resources.arcade_button2;
+            this.btn_game3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_game3.Font = new System.Drawing.Font("MV Boli", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_game3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_game3.Location = new System.Drawing.Point(125, 347);
+            this.btn_game3.Name = "btn_game3";
+            this.btn_game3.Size = new System.Drawing.Size(196, 91);
+            this.btn_game3.TabIndex = 3;
+            this.btn_game3.Text = "Game 3";
+            this.btn_game3.UseVisualStyleBackColor = true;
+            this.btn_game3.Click += new System.EventHandler(this.btn_game3_Click);
+            // 
+            // btn_leaderboard
+            // 
+            this.btn_leaderboard.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_leaderboard.BackgroundImage = global::ClydeArcade.Properties.Resources.arcade_button2;
+            this.btn_leaderboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_leaderboard.Font = new System.Drawing.Font("MV Boli", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_leaderboard.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_leaderboard.Location = new System.Drawing.Point(458, 116);
+            this.btn_leaderboard.Name = "btn_leaderboard";
+            this.btn_leaderboard.Size = new System.Drawing.Size(237, 140);
+            this.btn_leaderboard.TabIndex = 4;
+            this.btn_leaderboard.Text = "Leaderboard";
+            this.btn_leaderboard.UseVisualStyleBackColor = false;
+            this.btn_leaderboard.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // btn_exit
+            // 
+            this.btn_exit.BackgroundImage = global::ClydeArcade.Properties.Resources.arcade_button2;
+            this.btn_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_exit.Font = new System.Drawing.Font("MV Boli", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_exit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_exit.Location = new System.Drawing.Point(458, 298);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(237, 140);
+            this.btn_exit.TabIndex = 5;
+            this.btn_exit.Text = "Exit";
+            this.btn_exit.UseVisualStyleBackColor = true;
+            // 
+            // lbl_title
+            // 
+            this.lbl_title.AutoSize = true;
+            this.lbl_title.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl_title.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbl_title.Font = new System.Drawing.Font("MV Boli", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_title.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl_title.Image = global::ClydeArcade.Properties.Resources.arcade_button;
+            this.lbl_title.Location = new System.Drawing.Point(240, 9);
+            this.lbl_title.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Padding = new System.Windows.Forms.Padding(45, 25, 45, 25);
+            this.lbl_title.Size = new System.Drawing.Size(327, 97);
+            this.lbl_title.TabIndex = 6;
+            this.lbl_title.Text = "Clyde Arcade";
             // 
             // ClydeArcade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::ClydeArcade.Properties.Resources.arcade_background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_title);
+            this.Controls.Add(this.btn_exit);
+            this.Controls.Add(this.btn_leaderboard);
+            this.Controls.Add(this.btn_game3);
+            this.Controls.Add(this.btn_game2);
+            this.Controls.Add(this.btn_game1);
+            this.DoubleBuffered = true;
             this.Name = "ClydeArcade";
             this.Text = "ClydeArcade";
             this.Load += new System.EventHandler(this.ClydeArcade_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btn_game1;
+        private System.Windows.Forms.Button btn_game2;
+        private System.Windows.Forms.Button btn_game3;
+        private System.Windows.Forms.Button btn_leaderboard;
+        private System.Windows.Forms.Button btn_exit;
+        private System.Windows.Forms.Label lbl_title;
     }
 }

@@ -1,13 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ClydeArcade
 {
-    internal class Game1
+    public partial class Game1 : Form
     {
+        public Game1()
+        {
+            InitializeComponent();
+        }
+
+        private void Game1_Load(object sender, EventArgs e)
+        {
+
+        }
+
         public void updateGame()
         {
             // This will be responsible for updating the game based on user input, elapsed time etc.
@@ -37,6 +51,5 @@ namespace ClydeArcade
             // This will end the game, present text to the user and update the leaderboard.
 
         }
-
-    } //End of Game1 class
+    } //End of ClydeArcade class
 } //End of namespace

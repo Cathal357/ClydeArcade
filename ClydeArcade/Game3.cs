@@ -1,13 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ClydeArcade
 {
-    internal class Game3
+    public partial class Game3 : Form
     {
+        public Game3()
+        {
+            InitializeComponent();
+        }
+
+        private void Game3_Load(object sender, EventArgs e)
+        {
+
+        }
+
         public void checkMatch()
         {
             // This will check if the user has been successful in matching two cards.

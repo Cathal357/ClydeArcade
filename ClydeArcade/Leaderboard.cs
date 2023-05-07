@@ -1,13 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ClydeArcade
 {
-    internal class Leaderboard
+    public partial class Leaderboard : Form
     {
+        public Leaderboard()
+        {
+            InitializeComponent();
+        }
+
+        private void Leaderboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
         public void showTopScore()
         {
             // This will return a list of the top three high scores.
@@ -28,3 +42,5 @@ namespace ClydeArcade
 
     } //End of Leaderboard class
 } //End of namespace
+
+

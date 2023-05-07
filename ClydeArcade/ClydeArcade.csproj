@@ -52,14 +52,46 @@
     <Compile Include="ClydeArcade.Designer.cs">
       <DependentUpon>ClydeArcade.cs</DependentUpon>
     </Compile>
-    <Compile Include="Game1.cs" />
-    <Compile Include="Game2.cs" />
-    <Compile Include="Game3.cs" />
-    <Compile Include="Leaderboard.cs" />
+    <Compile Include="Game1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game1.Designer.cs">
+      <DependentUpon>Game1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game2.Designer.cs">
+      <DependentUpon>Game2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game3.Designer.cs">
+      <DependentUpon>Game3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leaderboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Leaderboard.Designer.cs">
+      <DependentUpon>Leaderboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ClydeArcade.resx">
       <DependentUpon>ClydeArcade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game1.resx">
+      <DependentUpon>Game1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game2.resx">
+      <DependentUpon>Game2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game3.resx">
+      <DependentUpon>Game3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leaderboard.resx">
+      <DependentUpon>Leaderboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -69,6 +101,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -82,6 +115,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arcade_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arcade_button.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

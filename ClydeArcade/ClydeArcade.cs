@@ -52,5 +52,29 @@ namespace ClydeArcade
             // This will exit the program and shut down the arcade.
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_title_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_game3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
     } //End of ClydeArcade class
 } //End of namespace
