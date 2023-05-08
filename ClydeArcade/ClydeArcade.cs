@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 
 namespace ClydeArcade
 {
@@ -45,36 +46,62 @@ namespace ClydeArcade
         public void showLeaderboard()
         {
             // This will show the leaderboard containing the top 3 scores for each game and who achieved those scores.
+
+            // This will hide the current display.
+                this.Hide();
+
+            // This will create an instance of the leaderboard class and display it.
+                Leaderboard l1 = new Leaderboard();
+                l1.ShowDialog();
+
+            // This will re-display the arcade if Leaderboard is force closed.
+                l1 = null;
+                this.Show();
         }
 
         public void exit()
         {
             // This will exit the program and shut down the arcade.
+
+            // This will loop the statement to make sure all windows are closed.
+                foreach (Form f in Application.OpenForms)
+                {
+                    f.Close();
+                }
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void lbl_title_Click(object sender, EventArgs e)
         {
-
+            
+        }
+        private void btn_game1_Click(object sender, EventArgs e)
+        {
+            playGame1();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            playGame2();
         }
 
         private void btn_game3_Click(object sender, EventArgs e)
         {
-
+            playGame3();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            showLeaderboard();
+        }
 
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            exit();
         }
     } //End of ClydeArcade class
 } //End of namespace

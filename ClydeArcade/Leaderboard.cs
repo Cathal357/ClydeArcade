@@ -40,6 +40,22 @@ namespace ClydeArcade
 
         }
 
+        private void btn_game1_Click(object sender, EventArgs e)
+        {
+            // This will take the user back to the arcade menu screen.
+
+            // This will hide the current display.
+                 this.Hide();
+
+            // This will create an instance of the arcade class and display it.
+                ClydeArcade a1 = new ClydeArcade();
+                a1.ShowDialog();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     } //End of Leaderboard class
 } //End of namespace
 
