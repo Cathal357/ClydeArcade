@@ -31,16 +31,49 @@ namespace ClydeArcade
         public void playGame1()
         {
             // This will start game 1 and prompt the user to input a username for scoring purposes.
+
+            // This will hide the current display.
+            this.Hide();
+
+            // This will create an instance of the leaderboard class and display it.
+            Game1 g1 = new Game1();
+            g1.ShowDialog();
+
+            // This will re-display the arcade if Leaderboard is force closed.
+            g1 = null;
+            this.Show();
         }
 
         public void playGame2()
         {
             // This will start game 2 and prompt the user to input a username for scoring purposes.
+
+            // This will hide the current display.
+            this.Hide();
+
+            // This will create an instance of the leaderboard class and display it.
+            Game2 g2 = new Game2();
+            g2.ShowDialog();
+
+            // This will re-display the arcade if Leaderboard is force closed.
+            g2 = null;
+            this.Show();
         }
 
         public void playGame3()
         {
             // This will start game 3 and prompt the user to input a username for scoring purposes.
+
+            // This will hide the current display.
+            this.Hide();
+
+            // This will create an instance of the leaderboard class and display it.
+            Game3 g3 = new Game3();
+            g3.ShowDialog();
+
+            // This will re-display the arcade if Leaderboard is force closed.
+            g3 = null;
+            this.Show();
         }
 
         public void showLeaderboard()

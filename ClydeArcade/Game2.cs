@@ -12,6 +12,14 @@ namespace ClydeArcade
 {
     public partial class Game2 : Form
     {
+        string gameName = "";
+        string userName = "";
+        int score = 0;
+
+        int snake = 0;
+        int snakeSize = 0;
+        int food = 0;
+
         public Game2()
         {
             InitializeComponent();
@@ -19,7 +27,7 @@ namespace ClydeArcade
 
         private void Game2_Load(object sender, EventArgs e)
         {
-
+          
         }
 
         public void checkCollisions()

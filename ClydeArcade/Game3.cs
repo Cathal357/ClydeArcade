@@ -19,7 +19,15 @@ namespace ClydeArcade
 
         private void Game3_Load(object sender, EventArgs e)
         {
+            string gameName = "";
+            string userName = "";
+            int score = 0;
 
+            int[] grid = new int[8];
+            int timer = 0;
+            int[] cards = new int[8];
+            int chosenCards = 0;
+            int[] cardImage = new int[8];
         }
 
         public void checkMatch()

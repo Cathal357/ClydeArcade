@@ -12,6 +12,12 @@ namespace ClydeArcade
 {
     public partial class Leaderboard : Form
     {
+        string gameName = "";
+        string userName = "";
+        int score = 0;
+
+        int[] scoreArray = new int[100];
+
         public Leaderboard()
         {
             InitializeComponent();
@@ -19,7 +25,7 @@ namespace ClydeArcade
 
         private void Leaderboard_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         public void showTopScore()
