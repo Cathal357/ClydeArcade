@@ -20,7 +20,16 @@ namespace ClydeArcade
 
         private void ClydeArcade_Load(object sender, EventArgs e)
         {
+            // This is to prevent the game from running if the user closes the form.
+            ClydeArcade c1 = new ClydeArcade();
 
+            if (c1 == null)
+            {
+                foreach (Form f in Application.OpenForms)
+                {
+                    f.Close();
+                }
+            }
         }
 
         public void displayMenu()
@@ -35,13 +44,10 @@ namespace ClydeArcade
             // This will hide the current display.
             this.Hide();
 
-            // This will create an instance of the leaderboard class and display it.
+            // This will create an instance of the Game1 class and display it.
             Game1 g1 = new Game1();
             g1.ShowDialog();
 
-            // This will re-display the arcade if Leaderboard is force closed.
-            g1 = null;
-            this.Show();
         }
 
         public void playGame2()
@@ -51,13 +57,9 @@ namespace ClydeArcade
             // This will hide the current display.
             this.Hide();
 
-            // This will create an instance of the leaderboard class and display it.
+            // This will create an instance of the Game2 class and display it.
             Game2 g2 = new Game2();
             g2.ShowDialog();
-
-            // This will re-display the arcade if Leaderboard is force closed.
-            g2 = null;
-            this.Show();
         }
 
         public void playGame3()
@@ -67,13 +69,9 @@ namespace ClydeArcade
             // This will hide the current display.
             this.Hide();
 
-            // This will create an instance of the leaderboard class and display it.
+            // This will create an instance of the Game3 class and display it.
             Game3 g3 = new Game3();
             g3.ShowDialog();
-
-            // This will re-display the arcade if Leaderboard is force closed.
-            g3 = null;
-            this.Show();
         }
 
         public void showLeaderboard()
@@ -86,21 +84,18 @@ namespace ClydeArcade
             // This will create an instance of the leaderboard class and display it.
                 Leaderboard l1 = new Leaderboard();
                 l1.ShowDialog();
-
-            // This will re-display the arcade if Leaderboard is force closed.
-                l1 = null;
-                this.Show();
         }
 
         public void exit()
         {
             // This will exit the program and shut down the arcade.
 
-            // This will loop the statement to make sure all windows are closed.
-                foreach (Form f in Application.OpenForms)
-                {
-                    f.Close();
-                }
+            // Force close the program and all other forms.
+            foreach (Form f in Application.OpenForms)
+            {
+                f.Close();
+                System.Environment.Exit(1);
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)

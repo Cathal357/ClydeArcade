@@ -54,7 +54,7 @@
             this.lbl_game1_score.AutoSize = true;
             this.lbl_game1_score.BackColor = System.Drawing.Color.SkyBlue;
             this.lbl_game1_score.Font = new System.Drawing.Font("MV Boli", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_game1_score.Location = new System.Drawing.Point(26, 20);
+            this.lbl_game1_score.Location = new System.Drawing.Point(12, 9);
             this.lbl_game1_score.Name = "lbl_game1_score";
             this.lbl_game1_score.Size = new System.Drawing.Size(163, 52);
             this.lbl_game1_score.TabIndex = 0;
@@ -152,7 +152,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(569, 450);
+            this.ClientSize = new System.Drawing.Size(814, 450);
             this.Controls.Add(this.lbl_game1_score);
             this.Controls.Add(this.game1_player);
             this.Controls.Add(this.game1_enemy6);

@@ -47,7 +47,7 @@
             this.btn_game1.Name = "btn_game1";
             this.btn_game1.Size = new System.Drawing.Size(196, 91);
             this.btn_game1.TabIndex = 1;
-            this.btn_game1.Text = "Game 1";
+            this.btn_game1.Text = "Flight Frenzy";
             this.btn_game1.UseVisualStyleBackColor = true;
             this.btn_game1.Click += new System.EventHandler(this.btn_game1_Click);
             // 
@@ -62,7 +62,7 @@
             this.btn_game2.Name = "btn_game2";
             this.btn_game2.Size = new System.Drawing.Size(196, 91);
             this.btn_game2.TabIndex = 2;
-            this.btn_game2.Text = "Game 2";
+            this.btn_game2.Text = "Snake Escape";
             this.btn_game2.UseVisualStyleBackColor = true;
             this.btn_game2.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -77,7 +77,7 @@
             this.btn_game3.Name = "btn_game3";
             this.btn_game3.Size = new System.Drawing.Size(196, 91);
             this.btn_game3.TabIndex = 3;
-            this.btn_game3.Text = "Game 3";
+            this.btn_game3.Text = "Memory Match";
             this.btn_game3.UseVisualStyleBackColor = true;
             this.btn_game3.Click += new System.EventHandler(this.btn_game3_Click);
             // 

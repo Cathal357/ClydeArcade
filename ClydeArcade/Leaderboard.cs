@@ -25,7 +25,16 @@ namespace ClydeArcade
 
         private void Leaderboard_Load(object sender, EventArgs e)
         {
-           
+            // This is to prevent the game from running if the user closes the form.
+            Leaderboard l1 = new Leaderboard();
+
+            if (l1 == null)
+            {
+                foreach (Form f in Application.OpenForms)
+                {
+                    f.Close();
+                }
+            }
         }
 
         public void showTopScore()

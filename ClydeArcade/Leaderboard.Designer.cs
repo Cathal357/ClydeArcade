@@ -72,7 +72,7 @@
             this.lbl_game1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbl_game1.Size = new System.Drawing.Size(233, 201);
             this.lbl_game1.TabIndex = 8;
-            this.lbl_game1.Text = "Game 1";
+            this.lbl_game1.Text = "Flight Frenzy";
             this.lbl_game1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btn_back
@@ -95,7 +95,7 @@
             this.lbl_game1_score1.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_game1_score1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_game1_score1.Image = global::ClydeArcade.Properties.Resources.arcade_background;
-            this.lbl_game1_score1.Location = new System.Drawing.Point(57, 256);
+            this.lbl_game1_score1.Location = new System.Drawing.Point(57, 298);
             this.lbl_game1_score1.Name = "lbl_game1_score1";
             this.lbl_game1_score1.Size = new System.Drawing.Size(166, 29);
             this.lbl_game1_score1.TabIndex = 10;
@@ -108,7 +108,7 @@
             this.lbl_game1_score2.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_game1_score2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_game1_score2.Image = global::ClydeArcade.Properties.Resources.arcade_background;
-            this.lbl_game1_score2.Location = new System.Drawing.Point(57, 305);
+            this.lbl_game1_score2.Location = new System.Drawing.Point(57, 327);
             this.lbl_game1_score2.Name = "lbl_game1_score2";
             this.lbl_game1_score2.Size = new System.Drawing.Size(166, 29);
             this.lbl_game1_score2.TabIndex = 11;
@@ -120,7 +120,7 @@
             this.lbl_game1_score3.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_game1_score3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_game1_score3.Image = global::ClydeArcade.Properties.Resources.arcade_background;
-            this.lbl_game1_score3.Location = new System.Drawing.Point(57, 350);
+            this.lbl_game1_score3.Location = new System.Drawing.Point(57, 356);
             this.lbl_game1_score3.Name = "lbl_game1_score3";
             this.lbl_game1_score3.Size = new System.Drawing.Size(166, 29);
             this.lbl_game1_score3.TabIndex = 12;
@@ -140,7 +140,7 @@
             this.lbl_game2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbl_game2.Size = new System.Drawing.Size(233, 201);
             this.lbl_game2.TabIndex = 13;
-            this.lbl_game2.Text = "Game 2";
+            this.lbl_game2.Text = "Snake Escape";
             this.lbl_game2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lbl_game2_score1
@@ -148,7 +148,7 @@
             this.lbl_game2_score1.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_game2_score1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_game2_score1.Image = global::ClydeArcade.Properties.Resources.arcade_background;
-            this.lbl_game2_score1.Location = new System.Drawing.Point(314, 256);
+            this.lbl_game2_score1.Location = new System.Drawing.Point(314, 298);
             this.lbl_game2_score1.Name = "lbl_game2_score1";
             this.lbl_game2_score1.Size = new System.Drawing.Size(166, 29);
             this.lbl_game2_score1.TabIndex = 14;
@@ -160,7 +160,7 @@
             this.lbl_game2_score2.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_game2_score2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_game2_score2.Image = global::ClydeArcade.Properties.Resources.arcade_background;
-            this.lbl_game2_score2.Location = new System.Drawing.Point(314, 305);
+            this.lbl_game2_score2.Location = new System.Drawing.Point(314, 327);
             this.lbl_game2_score2.Name = "lbl_game2_score2";
             this.lbl_game2_score2.Size = new System.Drawing.Size(166, 29);
             this.lbl_game2_score2.TabIndex = 15;
@@ -172,7 +172,7 @@
             this.lbl_game2_score3.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_game2_score3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_game2_score3.Image = global::ClydeArcade.Properties.Resources.arcade_background;
-            this.lbl_game2_score3.Location = new System.Drawing.Point(314, 350);
+            this.lbl_game2_score3.Location = new System.Drawing.Point(314, 356);
             this.lbl_game2_score3.Name = "lbl_game2_score3";
             this.lbl_game2_score3.Size = new System.Drawing.Size(166, 29);
             this.lbl_game2_score3.TabIndex = 16;
@@ -192,7 +192,7 @@
             this.lbl_game3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbl_game3.Size = new System.Drawing.Size(233, 201);
             this.lbl_game3.TabIndex = 17;
-            this.lbl_game3.Text = "Game 2";
+            this.lbl_game3.Text = "Memory Match";
             this.lbl_game3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lbl_game3_score1
@@ -200,7 +200,7 @@
             this.lbl_game3_score1.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_game3_score1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_game3_score1.Image = global::ClydeArcade.Properties.Resources.arcade_background;
-            this.lbl_game3_score1.Location = new System.Drawing.Point(576, 256);
+            this.lbl_game3_score1.Location = new System.Drawing.Point(576, 298);
             this.lbl_game3_score1.Name = "lbl_game3_score1";
             this.lbl_game3_score1.Size = new System.Drawing.Size(166, 29);
             this.lbl_game3_score1.TabIndex = 18;
@@ -212,7 +212,7 @@
             this.lbl_game3_score2.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_game3_score2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_game3_score2.Image = global::ClydeArcade.Properties.Resources.arcade_background;
-            this.lbl_game3_score2.Location = new System.Drawing.Point(576, 305);
+            this.lbl_game3_score2.Location = new System.Drawing.Point(576, 327);
             this.lbl_game3_score2.Name = "lbl_game3_score2";
             this.lbl_game3_score2.Size = new System.Drawing.Size(166, 29);
             this.lbl_game3_score2.TabIndex = 19;
@@ -224,7 +224,7 @@
             this.lbl_game3_score3.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_game3_score3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_game3_score3.Image = global::ClydeArcade.Properties.Resources.arcade_background;
-            this.lbl_game3_score3.Location = new System.Drawing.Point(576, 350);
+            this.lbl_game3_score3.Location = new System.Drawing.Point(576, 356);
             this.lbl_game3_score3.Name = "lbl_game3_score3";
             this.lbl_game3_score3.Size = new System.Drawing.Size(166, 29);
             this.lbl_game3_score3.TabIndex = 20;

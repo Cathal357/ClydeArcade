@@ -19,7 +19,7 @@ namespace ClydeArcade
 
         private void Game3_Load(object sender, EventArgs e)
         {
-            string gameName = "";
+            string gameName = "Memory Match";
             string userName = "";
             int score = 0;
 

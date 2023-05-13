@@ -12,10 +12,12 @@ namespace ClydeArcade
 {
     public partial class Game1 : Form
     {
-        string gameName = "";
+        // Declaring variables that will store in the database.
+        string gameName = "Flight Frenzy";
         string userName = "";
         int score = 0;
 
+        // Declaring variables that will be used in the game.
         int gravity = 5;
         int speed = 5;
 
@@ -115,7 +117,20 @@ namespace ClydeArcade
         public void gameStart()
         {
             // This will start a new game if the user decides to play again.
-            
+
+            // Close the form and reopens it to restart the game.
+            this.Close();
+            Game1 game1 = new Game1();
+            game1.Show();
+
+            // This is to prevent the game from running if the user closes the form.
+            if (game1 == null)
+            {
+                foreach (Form f in Application.OpenForms)
+                {
+                    f.Close();
+                }
+            }
         }
 
         public void gameEnd()
@@ -131,6 +146,7 @@ namespace ClydeArcade
 
         private void gameTimerEvent(object sender, EventArgs e)
         {
+            // This will call the methods that will update the game.
             updateGame();
             checkCollisions();
             updateScore();
@@ -138,7 +154,8 @@ namespace ClydeArcade
 
         private void game1_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Space)
+            // This will reduce the gravity when the user presses the space bar.
+            if (e.KeyCode == Keys.Space)
             {
                 gravity = -5;
             }
@@ -146,6 +163,7 @@ namespace ClydeArcade
 
         private void game1_KeyUp(object sender, KeyEventArgs e)
         {
+            // This will increase the gravity when the user releases the space bar.
             if (e.KeyCode == Keys.Space)
             {
                 gravity = 5;
