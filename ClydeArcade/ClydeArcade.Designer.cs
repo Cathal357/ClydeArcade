@@ -34,6 +34,7 @@
             this.btn_leaderboard = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
             this.lbl_title = new System.Windows.Forms.Label();
+            this.btn_homeScreen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_game1
@@ -130,6 +131,24 @@
             this.lbl_title.TabIndex = 6;
             this.lbl_title.Text = "Clyde Arcade";
             // 
+            // btn_homeScreen
+            // 
+            this.btn_homeScreen.AutoSize = true;
+            this.btn_homeScreen.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_homeScreen.BackgroundImage = global::ClydeArcade.Properties.Resources.arcade_background;
+            this.btn_homeScreen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_homeScreen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_homeScreen.Font = new System.Drawing.Font("MV Boli", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_homeScreen.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_homeScreen.Location = new System.Drawing.Point(37, 9);
+            this.btn_homeScreen.Name = "btn_homeScreen";
+            this.btn_homeScreen.Size = new System.Drawing.Size(740, 429);
+            this.btn_homeScreen.TabIndex = 7;
+            this.btn_homeScreen.TabStop = false;
+            this.btn_homeScreen.Text = "Press To Play!";
+            this.btn_homeScreen.UseVisualStyleBackColor = true;
+            this.btn_homeScreen.Click += new System.EventHandler(this.btn_homeScreen_Click);
+            // 
             // ClydeArcade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -137,6 +156,7 @@
             this.BackgroundImage = global::ClydeArcade.Properties.Resources.arcade_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_homeScreen);
             this.Controls.Add(this.lbl_title);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.btn_leaderboard);
@@ -160,5 +180,6 @@
         private System.Windows.Forms.Button btn_leaderboard;
         private System.Windows.Forms.Button btn_exit;
         private System.Windows.Forms.Label lbl_title;
+        private System.Windows.Forms.Button btn_homeScreen;
     }
 }

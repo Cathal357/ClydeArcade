@@ -25,16 +25,7 @@ namespace ClydeArcade
 
         private void Leaderboard_Load(object sender, EventArgs e)
         {
-            // This is to prevent the game from running if the user closes the form.
-            Leaderboard l1 = new Leaderboard();
-
-            if (l1 == null)
-            {
-                foreach (Form f in Application.OpenForms)
-                {
-                    f.Close();
-                }
-            }
+            
         }
 
         public void showTopScore()
@@ -70,6 +61,16 @@ namespace ClydeArcade
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void leaderboard_formClose(object sender, FormClosingEventArgs e)
+        {
+            // This will run as a failsafe to ensure that the program doesn't run in the background.
+            foreach (Form f in Application.OpenForms)
+            {
+                f.Close();
+                System.Environment.Exit(1);
+            }
         }
     } //End of Leaderboard class
 } //End of namespace

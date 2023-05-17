@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ClydeArcade
 {
-    public partial class Game1 : Form
+    public partial class Game1 : Form 
     {
         // Declaring variables that will store in the database.
         string gameName = "Flight Frenzy";
@@ -122,21 +122,19 @@ namespace ClydeArcade
             this.Close();
             Game1 game1 = new Game1();
             game1.Show();
-
-            // This is to prevent the game from running if the user closes the form.
-            if (game1 == null)
-            {
-                foreach (Form f in Application.OpenForms)
-                {
-                    f.Close();
-                }
-            }
         }
 
         public void gameEnd()
         {
             // This will end the game, present text to the user and update the leaderboard.
-            game1_timer.Stop();  
+            game1_timer.Stop();
+
+            // This will display game over text and options for the user to exit or retry.
+            game1_gameOver.Visible = true;
+            lbl_gameOver.Visible = true;
+            btn_gameOverBack.Visible = true;
+            btn_gameOverRetry.Visible = true;
+            lbl_gameOver.Text = "Game Over!\n Score: " + score;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -146,6 +144,15 @@ namespace ClydeArcade
 
         private void gameTimerEvent(object sender, EventArgs e)
         {
+            // Set the focus to so that user inputs have priority over the buttons
+            this.Focus();
+
+            // This will hide the game over screen at the beginning of the game.
+            game1_gameOver.Visible = false;
+            lbl_gameOver.Visible = false;
+            btn_gameOverBack.Visible = false;
+            btn_gameOverRetry.Visible = false;
+
             // This will call the methods that will update the game.
             updateGame();
             checkCollisions();
@@ -168,6 +175,23 @@ namespace ClydeArcade
             {
                 gravity = 5;
             }
+        }
+
+        private void btn_gameOverRetry_Click(object sender, EventArgs e)
+        {
+            gameStart();
+        }
+
+        private void btn_gameOverBack_Click(object sender, EventArgs e)
+        {
+            // This will take the user back to the arcade menu screen.
+
+            // This will hide the current display.
+            this.Hide();
+
+            // This will create an instance of the arcade class and display it.
+            ClydeArcade a1 = new ClydeArcade();
+            a1.ShowDialog();
         }
     } //End of ClydeArcade class
 } //End of namespace

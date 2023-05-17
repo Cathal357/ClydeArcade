@@ -114,15 +114,6 @@ namespace ClydeArcade
             this.Close();
             Game2 game2 = new Game2();
             game2.Show();
-
-            // This is to prevent the game from running if the user closes the form.
-            if(game2 == null)
-            {
-                foreach (Form f in Application.OpenForms)
-                {
-                    f.Close();
-                }
-            }
         }
 
         public void gameEnd()
@@ -191,6 +182,11 @@ namespace ClydeArcade
             // This will create an instance of the arcade class and display it.
             ClydeArcade a1 = new ClydeArcade();
             a1.ShowDialog();
+        }
+
+        private void game2_gameOver_Click(object sender, EventArgs e)
+        {
+
         }
     } //End of ClydeArcade class
 } //End of namespace

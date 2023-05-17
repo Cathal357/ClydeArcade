@@ -144,6 +144,7 @@
             this.game2_gameOver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.game2_gameOver.TabIndex = 9;
             this.game2_gameOver.TabStop = false;
+            this.game2_gameOver.Click += new System.EventHandler(this.game2_gameOver_Click);
             // 
             // lbl_gameOver
             // 

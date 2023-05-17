@@ -39,6 +39,10 @@
             this.game1_enemy4 = new System.Windows.Forms.PictureBox();
             this.game1_enemy5 = new System.Windows.Forms.PictureBox();
             this.game1_enemy6 = new System.Windows.Forms.PictureBox();
+            this.game1_gameOver = new System.Windows.Forms.PictureBox();
+            this.btn_gameOverRetry = new System.Windows.Forms.Button();
+            this.btn_gameOverBack = new System.Windows.Forms.Button();
+            this.lbl_gameOver = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.game1_player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.game1_ground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.game1_enemy1)).BeginInit();
@@ -47,6 +51,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.game1_enemy4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.game1_enemy5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.game1_enemy6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.game1_gameOver)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_game1_score
@@ -147,12 +152,71 @@
             this.game1_enemy6.TabIndex = 8;
             this.game1_enemy6.TabStop = false;
             // 
+            // game1_gameOver
+            // 
+            this.game1_gameOver.Image = global::ClydeArcade.Properties.Resources.arcade_background;
+            this.game1_gameOver.Location = new System.Drawing.Point(7, 0);
+            this.game1_gameOver.Name = "game1_gameOver";
+            this.game1_gameOver.Size = new System.Drawing.Size(801, 450);
+            this.game1_gameOver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.game1_gameOver.TabIndex = 10;
+            this.game1_gameOver.TabStop = false;
+            // 
+            // btn_gameOverRetry
+            // 
+            this.btn_gameOverRetry.BackgroundImage = global::ClydeArcade.Properties.Resources.arcade_button2;
+            this.btn_gameOverRetry.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_gameOverRetry.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_gameOverRetry.Font = new System.Drawing.Font("MV Boli", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_gameOverRetry.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_gameOverRetry.Location = new System.Drawing.Point(455, 271);
+            this.btn_gameOverRetry.Name = "btn_gameOverRetry";
+            this.btn_gameOverRetry.Size = new System.Drawing.Size(196, 91);
+            this.btn_gameOverRetry.TabIndex = 15;
+            this.btn_gameOverRetry.Text = "Retry";
+            this.btn_gameOverRetry.UseVisualStyleBackColor = true;
+            this.btn_gameOverRetry.Click += new System.EventHandler(this.btn_gameOverRetry_Click);
+            // 
+            // btn_gameOverBack
+            // 
+            this.btn_gameOverBack.BackgroundImage = global::ClydeArcade.Properties.Resources.arcade_button2;
+            this.btn_gameOverBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_gameOverBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_gameOverBack.Font = new System.Drawing.Font("MV Boli", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_gameOverBack.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_gameOverBack.Location = new System.Drawing.Point(163, 271);
+            this.btn_gameOverBack.Name = "btn_gameOverBack";
+            this.btn_gameOverBack.Size = new System.Drawing.Size(196, 91);
+            this.btn_gameOverBack.TabIndex = 14;
+            this.btn_gameOverBack.Text = "Back To Menu";
+            this.btn_gameOverBack.UseVisualStyleBackColor = true;
+            this.btn_gameOverBack.Click += new System.EventHandler(this.btn_gameOverBack_Click);
+            // 
+            // lbl_gameOver
+            // 
+            this.lbl_gameOver.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl_gameOver.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbl_gameOver.Font = new System.Drawing.Font("MV Boli", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_gameOver.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl_gameOver.Image = global::ClydeArcade.Properties.Resources.arcade_button;
+            this.lbl_gameOver.Location = new System.Drawing.Point(243, 88);
+            this.lbl_gameOver.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_gameOver.Name = "lbl_gameOver";
+            this.lbl_gameOver.Padding = new System.Windows.Forms.Padding(45, 25, 45, 25);
+            this.lbl_gameOver.Size = new System.Drawing.Size(332, 138);
+            this.lbl_gameOver.TabIndex = 13;
+            this.lbl_gameOver.Text = "Game Over!";
+            // 
             // Game1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(814, 450);
+            this.Controls.Add(this.btn_gameOverRetry);
+            this.Controls.Add(this.btn_gameOverBack);
+            this.Controls.Add(this.lbl_gameOver);
+            this.Controls.Add(this.game1_gameOver);
             this.Controls.Add(this.lbl_game1_score);
             this.Controls.Add(this.game1_player);
             this.Controls.Add(this.game1_enemy6);
@@ -175,6 +239,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.game1_enemy4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.game1_enemy5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.game1_enemy6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.game1_gameOver)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,5 +257,9 @@
         private System.Windows.Forms.PictureBox game1_enemy4;
         private System.Windows.Forms.PictureBox game1_enemy5;
         private System.Windows.Forms.PictureBox game1_enemy6;
+        private System.Windows.Forms.PictureBox game1_gameOver;
+        private System.Windows.Forms.Button btn_gameOverRetry;
+        private System.Windows.Forms.Button btn_gameOverBack;
+        private System.Windows.Forms.Label lbl_gameOver;
     }
 }

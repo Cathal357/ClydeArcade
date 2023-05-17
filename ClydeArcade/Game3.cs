@@ -71,6 +71,5 @@ namespace ClydeArcade
             // This will end the game, present text to the user and update the leaderboard.
 
         }
-
     } //End of Game3 class
 } //End of namespace

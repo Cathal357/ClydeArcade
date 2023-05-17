@@ -255,6 +255,7 @@
             this.DoubleBuffered = true;
             this.Name = "Leaderboard";
             this.Text = "Leaderboard";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.leaderboard_formClose);
             this.Load += new System.EventHandler(this.Leaderboard_Load);
             this.ResumeLayout(false);
 

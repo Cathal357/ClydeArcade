@@ -20,21 +20,13 @@ namespace ClydeArcade
 
         private void ClydeArcade_Load(object sender, EventArgs e)
         {
-            // This is to prevent the game from running if the user closes the form.
-            ClydeArcade c1 = new ClydeArcade();
-
-            if (c1 == null)
-            {
-                foreach (Form f in Application.OpenForms)
-                {
-                    f.Close();
-                }
-            }
+            
         }
 
         public void displayMenu()
         {
             // This will display the menu that allows the user to select their choice.
+            btn_homeScreen.Visible = false;
         }
 
         public void playGame1()
@@ -98,15 +90,6 @@ namespace ClydeArcade
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void lbl_title_Click(object sender, EventArgs e)
-        {
-            
-        }
         private void btn_game1_Click(object sender, EventArgs e)
         {
             playGame1();
@@ -130,6 +113,16 @@ namespace ClydeArcade
         private void btn_exit_Click(object sender, EventArgs e)
         {
             exit();
+        }
+
+        private void arcade_formClose(object sender, FormClosingEventArgs e)
+        {
+
+        }
+
+        private void btn_homeScreen_Click(object sender, EventArgs e)
+        {
+            displayMenu();
         }
     } //End of ClydeArcade class
 } //End of namespace
