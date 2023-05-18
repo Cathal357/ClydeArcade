@@ -161,6 +161,7 @@
             this.game1_gameOver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.game1_gameOver.TabIndex = 10;
             this.game1_gameOver.TabStop = false;
+            this.game1_gameOver.Click += new System.EventHandler(this.game1_gameOver_Click);
             // 
             // btn_gameOverRetry
             // 

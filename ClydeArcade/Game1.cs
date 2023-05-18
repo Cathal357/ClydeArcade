@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 
 namespace ClydeArcade
 {
@@ -192,6 +195,11 @@ namespace ClydeArcade
             // This will create an instance of the arcade class and display it.
             ClydeArcade a1 = new ClydeArcade();
             a1.ShowDialog();
+        }
+
+        private void game1_gameOver_Click(object sender, EventArgs e)
+        {
+
         }
     } //End of ClydeArcade class
 } //End of namespace
