@@ -16,11 +16,13 @@ namespace ClydeArcade
 {
     internal class Database
     {
+        // This class will handle all database related tasks.
         private MySqlConnection connection;
         private string connectionString = "Server=localhost;Database=clydearcade;Uid=admin;Pwd=password;";
 
         public Database()
         {
+            // This will create a new connection to the database.
             connection = new MySqlConnection(connectionString);
         }
 

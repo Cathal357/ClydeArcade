@@ -75,7 +75,16 @@ namespace ClydeArcade
                 game2_food.Location = new Point(x, y);
 
                 // This will add a new body part to the snake after eating food.
+                // Create a new PictureBox control for the duplicated segment and set its properties
+                PictureBox bodyPictureBox = new PictureBox();
+                bodyPictureBox.BackColor = Color.Green;
+                bodyPictureBox.Size = new Size(snakeSize, snakeSize);
 
+                // Position the new segment behind the head
+                bodyPictureBox.Location = new Point(game2_head.Left - snakeSize, game2_head.Top);
+
+                // Add the PictureBox control to the form's controls
+                Controls.Add(bodyPictureBox);
             }
         }
 
