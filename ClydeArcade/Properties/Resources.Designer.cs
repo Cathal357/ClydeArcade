@@ -103,6 +103,56 @@ namespace ClydeArcade.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cardImage1 {
+            get {
+                object obj = ResourceManager.GetObject("cardImage1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cardImage2 {
+            get {
+                object obj = ResourceManager.GetObject("cardImage2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cardImage3 {
+            get {
+                object obj = ResourceManager.GetObject("cardImage3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cardImage4 {
+            get {
+                object obj = ResourceManager.GetObject("cardImage4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cardImage5 {
+            get {
+                object obj = ResourceManager.GetObject("cardImage5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap game1_enemy {
             get {
                 object obj = ResourceManager.GetObject("game1_enemy", resourceCulture);
@@ -126,6 +176,26 @@ namespace ClydeArcade.Properties {
         internal static System.Drawing.Bitmap game1_player {
             get {
                 object obj = ResourceManager.GetObject("game1_player", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap game2_body {
+            get {
+                object obj = ResourceManager.GetObject("game2_body", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap game2_food {
+            get {
+                object obj = ResourceManager.GetObject("game2_food", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -160,6 +160,7 @@
             this.lbl_gameOver.Size = new System.Drawing.Size(332, 138);
             this.lbl_gameOver.TabIndex = 10;
             this.lbl_gameOver.Text = "Game Over!";
+            this.lbl_gameOver.Click += new System.EventHandler(this.lbl_gameOver_Click);
             // 
             // btn_gameOverBack
             // 

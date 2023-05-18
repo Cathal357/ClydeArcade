@@ -118,11 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="game1_enemy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\game1_enemy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cardImage4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cardImage4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="game1_ground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\game1_ground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cardImage2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cardImage2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cardImage5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cardImage5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arcade_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arcade_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,13 +133,31 @@
   <data name="arcade_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arcade_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="game1_player" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\game1_player.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="game1_ground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\game1_ground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="arcade_button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arcade_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="game2_food" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\game2_food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cardImage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cardImage1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cardImage3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cardImage3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="game1_enemy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\game1_enemy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arcade_button2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arcade_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="game1_player" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\game1_player.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="game2_body" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\game2_body.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

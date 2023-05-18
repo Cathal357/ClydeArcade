@@ -188,5 +188,10 @@ namespace ClydeArcade
         {
 
         }
+
+        private void lbl_gameOver_Click(object sender, EventArgs e)
+        {
+
+        }
     } //End of ClydeArcade class
 } //End of namespace

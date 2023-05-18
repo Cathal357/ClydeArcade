@@ -52,6 +52,7 @@
     <Compile Include="ClydeArcade.Designer.cs">
       <DependentUpon>ClydeArcade.cs</DependentUpon>
     </Compile>
+    <Compile Include="Database.cs" />
     <Compile Include="Game1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +132,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\game1_player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cardImage1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cardImage2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cardImage3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cardImage4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cardImage5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game2_food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game2_body.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -20,7 +20,7 @@ namespace ClydeArcade
 
         private void ClydeArcade_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         public void displayMenu()
@@ -74,8 +74,8 @@ namespace ClydeArcade
                 this.Hide();
 
             // This will create an instance of the leaderboard class and display it.
-                Leaderboard l1 = new Leaderboard();
-                l1.ShowDialog();
+            Leaderboard lb = new Leaderboard();
+            lb.ShowDialog();
         }
 
         public void exit()
@@ -115,14 +115,19 @@ namespace ClydeArcade
             exit();
         }
 
-        private void arcade_formClose(object sender, FormClosingEventArgs e)
-        {
-
-        }
-
         private void btn_homeScreen_Click(object sender, EventArgs e)
         {
             displayMenu();
+        }
+
+        private void arcade_formClosed(object sender, FormClosedEventArgs e)
+        {
+            // This will ensure the program doesn't continue running in the background after the user has closed the form.
+            foreach (Form f in Application.OpenForms)
+            {
+                f.Close();
+                System.Environment.Exit(1);
+            }
         }
     } //End of ClydeArcade class
 } //End of namespace

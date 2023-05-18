@@ -166,6 +166,7 @@
             this.DoubleBuffered = true;
             this.Name = "ClydeArcade";
             this.Text = "ClydeArcade";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.arcade_formClosed);
             this.Load += new System.EventHandler(this.ClydeArcade_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
